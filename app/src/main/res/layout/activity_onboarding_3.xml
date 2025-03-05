@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_lilac_light">
+
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/btn_skip"
+        android:textColor="@color/primary_purple"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivOnboarding"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/app_slogan"
+        android:src="@drawable/ic_onboarding_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSkip" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/best_offers_title"
+        android:textColor="@color/secondary_black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivOnboarding" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="307dp"
+        android:layout_height="39dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:fontWeight="600"
+        android:gravity="start"
+        android:text="@string/best_offers_subtitle"
+        android:textColor="@color/secondary_gray_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_purple_rounded"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/btn_next"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_lilac_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitle" />
+
+    <ImageView
+        android:id="@+id/ivDots1"
+        android:layout_width="120dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="60dp"
+        android:contentDescription="@string/app_slogan"
+        android:src="@drawable/ic_onboarding_dots_3"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

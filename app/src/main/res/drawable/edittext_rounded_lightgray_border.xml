@@ -1,0 +1,21 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Прозрачный фон -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- Светло-серая обводка -->
+    <stroke
+        android:color="@color/primary_gray_light"
+        android:width="1dp" />
+
+    <!-- Радиус скругления -->
+    <corners android:radius="8dp" />
+
+    <!-- Дополнительные отступы внутри поля -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+</shape>

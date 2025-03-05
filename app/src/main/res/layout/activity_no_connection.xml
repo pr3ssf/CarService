@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_lilac_light"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/ivNoConnectionIcon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="292dp"
+        android:contentDescription="@string/no_internet_title"
+        android:src="@drawable/ic_no_connection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNoInternetTitle"
+        android:layout_width="213dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="416dp"
+        android:gravity="center"
+        android:text="@string/no_internet_title"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNoInternetSubtitle"
+        android:layout_width="310dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/no_internet_subtitle"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNoInternetTitle" />
+
+    <Button
+        android:id="@+id/btnRetry"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:text="@string/btn_retry"
+        android:textColor="@color/primary_lilac_light"
+        android:backgroundTint="@color/primary_purple"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        app:cornerRadius="8dp"
+        android:background="@drawable/button_purple_rounded"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

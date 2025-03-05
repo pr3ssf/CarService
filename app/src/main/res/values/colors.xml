@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="primary_purple">#2A1246</color>
+    <color name="primary_gray_light">#D0D5DD</color>
+    <color name="primary_lilac">#F9F5FF</color>
+    <color name="primary_lilac_light">#F2F5FC</color>
+
+    <!-- Secondary colors -->
+    <color name="secondary_black">#1A1A1A</color>
+    <color name="secondary_gray_dark">#404040</color>
+</resources>

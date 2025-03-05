@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_lilac_light"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/app_name"
+        android:textColor="@color/primary_purple"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_app_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/app_slogan"
+        android:textColor="@color/secondary_gray_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_name" />
+
+    <ImageView
+        android:id="@+id/iv_welcome_image"
+        android:layout_width="379dp"
+        android:layout_height="402dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/app_slogan"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_slogan"
+        app:srcCompat="@drawable/ic_logo_register" />
+
+    <Button
+        android:id="@+id/btnRetry"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="160dp"
+
+        android:background="@drawable/button_purple_rounded"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/btn_sign_in"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_lilac_light"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+
+        android:background="@drawable/button_transparent_rounded"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/btn_sign_up"
+        android:textColor="@color/primary_purple"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRetry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

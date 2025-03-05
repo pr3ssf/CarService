@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Название приложения и слоган -->
+    <string name="app_name">DriveNext</string>
+    <string name="app_slogan">Поможем найти твою следующую поездку</string>
+
+    <!-- Нет подключения к интернету -->
+    <string name="no_internet_title">Нет подключения к интернету</string>
+    <string name="no_internet_subtitle">Проверьте подключение и повторите попытку</string>
+    <string name="btn_retry">Повторить попытку</string>
+
+    <!-- Онбординг / Приветственные экраны -->
+    <string name="btn_skip">Пропустить</string>
+    <string name="rent_cars_title">Аренда автомобилей</string>
+    <string name="rent_cars_subtitle">Открой для себя удобный и доступный способ передвижения</string>
+    <string name="btn_next">Далее</string>
+    <string name="safe_convenient_title">Безопасно и удобно</string>
+    <string name="safe_convenient_subtitle">Арендуй автомобиль и наслаждайся его удобством</string>
+    <string name="best_offers_title">Лучшие предложения</string>
+    <string name="best_offers_subtitle">Выбирай понравившееся среди сотен доступных автомобилей</string>
+
+    <!-- Вход / Регистрация -->
+    <string name="btn_sign_in">Войти</string>
+    <string name="btn_sign_up">Зарегистрироваться</string>
+    <string name="sign_in_title">Войдите в аккаунт</string>
+    <string name="sign_in_subtitle">Пожалуйста, введите свои данные</string>
+    <string name="email_label">Электронная почта</string>
+    <string name="email_hint">Введите электронную почту</string>
+    <string name="password_label">Пароль</string>
+    <string name="password_hint">Введите пароль</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="sign_in_google">Войти через Google</string>
+    <string name="create_account">Создать аккаунт</string>
+    <string name="create_password_label">Придумайте пароль</string>
+    <string name="repeat_password_label">Повторите пароль</string>
+    <string name="terms_acceptance">Я согласен с условиями обслуживания и политикой конфиденциальности</string>
+
+    <!-- Поля для ввода ФИО и даты рождения -->
+    <string name="last_name_label">Фамилия</string>
+    <string name="last_name_hint">Введите фамилию</string>
+    <string name="first_name_label">Имя</string>
+    <string name="first_name_hint">Введите имя</string>
+    <string name="patronymic_label">Отчество</string>
+    <string name="patronymic_hint">Введите отчество</string>
+    <string name="birthdate_label">Дата рождения</string>
+    <string name="birthdate_hint">DD/MM/YYYY</string>
+    <string name="gender_label">Пол</string>
+    <string name="gender_male">Мужской</string>
+    <string name="gender_female">Женский</string>
+
+    <!-- Загрузка фото и данных -->
+    <string name="photo_hint">Добавление фотографии поможет владельцам и арендаторам узнать друг друга, когда они будут забирать машину</string>
+    <string name="driver_license_number_label">Номер водительского удостоверения</string>
+    <string name="driver_license_number_hint">0000000000</string>
+    <string name="issue_date_label">Дата выдачи</string>
+    <string name="upload_driver_license_photo">Загрузите фото водительского удостоверения</string>
+    <string name="btn_upload_photo">Загрузить фото</string>
+    <string name="upload_passport_photo">Загрузите фото паспорта</string>
+
+    <!-- Завершение регистрации -->
+    <string name="enjoy">Пользуйтесь с удовольствием</string>
+    <string name="congratulations">Поздравляем</string>
+    <string name="registration_success">
+        Вы успешно зарегистрировались.
+        Обработка ваших персональных данных займет около двух часов.
+        Спасибо за ожидание.
+    </string>
+
+</resources>

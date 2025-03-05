@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Основная тема приложения -->
+    <style name="Theme.CarService" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Цвета для основного бренда -->
+        <item name="colorPrimary">@color/primary_purple</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Цвета для дополнительного (вторичного) бренда -->
+        <item name="colorSecondary">@color/secondary_gray_dark</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+
+        <!-- Фон и Surface (поверхности) -->
+        <item name="colorOnBackground">@color/secondary_black</item>
+        <item name="colorSurface">@color/primary_lilac</item>
+        <item name="colorOnSurface">@color/secondary_black</item>
+
+        <!-- Цвет ошибки (можно оставить стандартным или задать свой) -->
+        <item name="colorError">#B00020</item>
+        <item name="colorOnError">@android:color/white</item>
+    </style>
+
+</resources>

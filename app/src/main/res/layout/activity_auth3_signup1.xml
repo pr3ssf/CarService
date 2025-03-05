@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_account_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/iv_welcome_image"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="52dp"
+        android:contentDescription="@string/app_slogan"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/tvTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/create_account"
+        android:textColor="@color/secondary_black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/email_label"
+        android:textColor="@color/secondary_black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edittext_rounded_lightgray_border"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/secondary_black"
+        android:textColorHint="@color/primary_gray_light"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/create_password_label"
+        android:textColor="@color/secondary_black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edittext_rounded_lightgray_border"
+        android:drawableEnd="@drawable/ic_eye_small"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:textColor="@color/secondary_black"
+        android:textColorHint="@color/primary_gray_light"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRepeatPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/repeat_password_label"
+        android:textColor="@color/secondary_black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <EditText
+        android:id="@+id/etRepeatPassword"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edittext_rounded_lightgray_border"
+        android:drawableEnd="@drawable/ic_eye_small"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:textColor="@color/secondary_black"
+        android:textColorHint="@color/primary_gray_light"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvRepeatPasswordLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/tvAgreement"
+        android:layout_width="337dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/terms_acceptance"
+        android:textAlignment="center"
+        android:buttonTint="@color/primary_gray_light"
+        android:textColor="@color/secondary_black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRepeatPassword" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/button_purple_rounded"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/btn_next"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_lilac_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAgreement" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
