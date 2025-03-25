@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_lilac_light">
+
+    <ImageView
+        android:id="@+id/ivLoadingIcon"
+        android:layout_width="257dp"
+        android:layout_height="323dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/ic_loader"
+        app:layout_constraintBottom_toTopOf="@id/tvLoading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Ищем подходящие автомобили"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLoadingIcon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

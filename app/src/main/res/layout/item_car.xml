@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardCar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Изображение автомобиля -->
+        <ImageView
+            android:id="@+id/ivCarImage"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_car_placeholder"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Название, марка -->
+        <TextView
+            android:id="@+id/tvCarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S 500 Sedan"
+            android:textColor="@color/secondary_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/ivCarImage"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvCarBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mercedes-Benz"
+            android:textColor="@color/secondary_black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tvCarTitle"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Цена и дополнительные характеристики -->
+        <TextView
+            android:id="@+id/tvCarPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2500Р"
+            android:textColor="@color/secondary_black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvCarBrand"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvPerDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" в день"
+            android:textColor="@color/secondary_black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="@id/tvCarPrice"
+            app:layout_constraintStart_toEndOf="@id/tvCarPrice"
+            android:layout_marginStart="4dp"/>
+
+        <TextView
+            android:id="@+id/tvFuelType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" |  Бензин"
+            android:textColor="@color/secondary_black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="@id/tvCarPrice"
+            app:layout_constraintStart_toEndOf="@id/tvPerDay"
+            android:layout_marginStart="8dp"/>
+
+        <!-- Кнопки в нижней части карточки -->
+        <!-- Для удобства создадим горизонтальную цепочку для кнопок -->
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Забронировать"
+            android:backgroundTint="@color/primary_purple"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/tvCarPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Детали"
+            android:backgroundTint="@color/primary_purple"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="@id/btnBook"
+            app:layout_constraintStart_toEndOf="@id/btnBook"
+            app:layout_constraintBottom_toBottomOf="@id/btnBook"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

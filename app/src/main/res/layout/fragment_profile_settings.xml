@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <!-- Корневой ConstraintLayout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Заголовок "Профиль" по центру -->
+
+        <!-- Блок с аватаром, именем и датой -->
+
+        <!-- Блок "Электронная почта" -->
+
+        <TextView
+            android:id="@+id/tvProfileTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:gravity="center"
+            android:text="Профиль"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/llAvatarBlock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileTitle">
+
+            <!-- Аватар -->
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:contentDescription="Я Джорджи"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_placeholder" />
+
+            <!-- Имя пользователя -->
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Иван Иванов"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Дата присоединения -->
+            <TextView
+                android:id="@+id/tvJoinedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Присоединился в июле 2024"
+                android:textColor="@color/secondary_gray_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Разделитель 1 -->
+        <LinearLayout
+            android:id="@+id/llEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:orientation="vertical"
+            android:paddingVertical="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llAvatarBlock">
+
+            <TextView
+                android:id="@+id/tvEmailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Электронная почта"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEmailValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="ivan@mtuci.ru"
+                android:textColor="@color/secondary_gray_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewDivider1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/primary_gray_light"
+            app:layout_constraintTop_toBottomOf="@id/llEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Блок "Пароль" -->
+        <LinearLayout
+            android:id="@+id/llPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/viewDivider1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tvPasswordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пароль"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_semibold" />
+
+            <TextView
+                android:id="@+id/tvChangePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Поменять пароль"
+                android:textColor="@color/primary_purple"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Разделитель 2 -->
+        <View
+            android:id="@+id/viewDivider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/primary_gray_light"
+            app:layout_constraintTop_toBottomOf="@id/llPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Блок "Пол" -->
+        <LinearLayout
+            android:id="@+id/llGender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="12dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintTop_toBottomOf="@id/viewDivider2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tvGenderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пол"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_semibold" />
+
+            <TextView
+                android:id="@+id/tvGenderValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Мужской"
+                android:textColor="@color/secondary_gray_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Разделитель 3 -->
+        <View
+            android:id="@+id/viewDivider3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/primary_gray_light"
+            app:layout_constraintTop_toBottomOf="@id/llGender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Блок "Google" -->
+        <LinearLayout
+            android:id="@+id/llGoogle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="12dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintTop_toBottomOf="@id/viewDivider3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tvGoogleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_semibold" />
+
+            <TextView
+                android:id="@+id/tvGoogleValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="ivanov@gmail.com"
+                android:textColor="@color/secondary_gray_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Разделитель 4 -->
+        <View
+            android:id="@+id/viewDivider4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/primary_gray_light"
+            app:layout_constraintTop_toBottomOf="@id/llGoogle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Кнопка/строка "Выйти из профиля" -->
+        <LinearLayout
+            android:id="@+id/llLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/viewDivider4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tvLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Выйти из профиля"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_semibold" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

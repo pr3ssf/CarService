@@ -83,8 +83,12 @@ class Auth2LoginActivity : BaseActivity() {
         }
 
         btnLogin.setOnClickListener {
-            startActivity(Intent(this, _LoggedinActivity::class.java))
+            val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("open_settings", true)
+            startActivity(intent)
+            finish()
         }
+
     }
 
     private fun updateLoginButton() {
